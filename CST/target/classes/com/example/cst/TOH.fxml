@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="ap1" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="900.0" style="-fx-background-color: #86AB89;" xmlns="http://javafx.com/javafx/23" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.cst.TOHController">
+   <children>
+      <StackPane fx:id="sp_t3" layoutX="601.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0" />
+      <StackPane fx:id="sp_t2" layoutX="294.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0" />
+      <StackPane fx:id="sp_t1" layoutX="10.0" layoutY="225.0" prefHeight="150.0" prefWidth="200.0" />
+      <Button fx:id="button_dfa" layoutX="35.0" layoutY="37.0" mnemonicParsing="false" onAction="#handleButtonClick" text="DFA">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_ndfa" layoutX="189.0" layoutY="37.0" mnemonicParsing="false" onAction="#handleButtonClick" text="NDFA">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_pda" layoutX="513.0" layoutY="37.0" mnemonicParsing="false" onAction="#handleButtonClick" text="PDA">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_tm" layoutX="654.0" layoutY="37.0" mnemonicParsing="false" onAction="#handleButtonClick" text="TM">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Separator layoutY="67.0" prefHeight="30.0" prefWidth="837.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Separator layoutY="14.0" prefHeight="30.0" prefWidth="837.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" />
+      <Button fx:id="button_cfg" layoutX="372.0" layoutY="37.0" mnemonicParsing="false" onAction="#handleButtonClick" text="CFG">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Button fx:id="button_toh" layoutX="793.0" layoutY="37.0" mnemonicParsing="false" onAction="#handleButtonClick" text="TOH">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffd900" height="45.0" layoutX="102.0" layoutY="285.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffd900" height="45.0" layoutX="387.0" layoutY="285.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
+      <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#ffd900" height="45.0" layoutX="693.0" layoutY="285.0" stroke="BLACK" strokeType="INSIDE" width="15.0" />
+      <TextArea fx:id="ta_toh" layoutX="396.0" layoutY="425.0" prefHeight="150.0" prefWidth="454.0" />
+   </children>
+
+</AnchorPane>
